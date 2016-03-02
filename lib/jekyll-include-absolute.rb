@@ -8,7 +8,7 @@ module Jekyll
     end
   end
 
-  class IncludeAbsoluteTag < Liquid::Tag
+  class JekyllIncludeAbsolute < Liquid::Tag
     def initialize(tag_name, markup, tokens)
       super
 
@@ -41,4 +41,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('include_absolute', Jekyll::IncludeAbsoluteTag)
+Liquid::Template.register_tag('include_absolute', Jekyll::JekyllIncludeAbsolute)
