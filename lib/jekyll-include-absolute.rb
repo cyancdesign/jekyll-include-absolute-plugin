@@ -10,10 +10,9 @@ module Jekyll
     end
   end
 
-  class JekyllIncludeAbsolute < Liquid::Tag
+  class IncludeAbsoluteTag < Liquid::Tag
     def initialize(tag_name, markup, tokens)
       super
-
       @file   = markup.strip
     end
 
@@ -44,4 +43,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('include_absolute', Jekyll::JekyllIncludeAbsolute)
+Liquid::Template.register_tag('include_absolute', Jekyll::IncludeAbsoluteTag)
