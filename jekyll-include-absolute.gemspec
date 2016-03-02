@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name = "jekyll-include-absolute"
   spec.license = "MIT"
   spec.has_rdoc = false
-  spec.version = '0.0.2'
+  spec.version = '0.0.3'
   spec.require_paths = ["lib"]
   spec.description = spec.description = <<-DESC
     A Jekyll plugin, that allows you to include files in any root folder.
