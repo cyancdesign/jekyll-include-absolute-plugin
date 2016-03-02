@@ -4,8 +4,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["tnhu", "Chris Yanc"]
   spec.email = ["cyanc@cyancdesig.com"]
   spec.files = ["lib/include_absolute.rb"]
-  spec.summary = "Assets for Jekyll"
-  spec.name = "jekyll-assets"
+  spec.summary = "Include Absolute Paths for Jekyll"
+  spec.name = "jekyll-include-absolute"
   spec.license = "MIT"
   spec.has_rdoc = false
   spec.version = '0.0.1'
