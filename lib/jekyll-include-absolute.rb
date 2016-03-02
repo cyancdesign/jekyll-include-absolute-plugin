@@ -1,3 +1,5 @@
+require "jekyll"
+
 module Jekyll
   class IncludeTagError < StandardError
     attr_accessor :path
