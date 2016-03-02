@@ -1,5 +1,4 @@
-require "jekyll"
-require 'open-uri'
+require 'jekyll'
 
 module Jekyll
   class IncludeTagError < StandardError
@@ -19,11 +18,11 @@ module Jekyll
 
     def render(context)
       file = context[@file] || @file
-      source = File.expand_path(context.registers[:site].config['source']).freeze
+      source = "./"
       path   = File.join(source, file)
 
       begin
-        partial = Liquid::Template.parse(open("http://#{file}") {|f| f.read })
+        partial = Liquid::Template.parse(read_file(path, context))
 
         context.stack do
           context['include'] = parse_params(context) if @params
